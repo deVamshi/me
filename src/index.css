@@ -7,6 +7,8 @@ body {
     "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #2b282c;
+  color: whitesmoke;
 }
 
 code {
@@ -15,15 +17,17 @@ code {
 }
 
 .App {
-  min-height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
   text-align: center;
 }
 
 .title {
-  font-size: 69px;
+  font-size: 45px;
+  color: whitesmoke;
+  max-width: 1000px;
+  padding: 20px;
+  text-align: start;
 }
 
 .about {
@@ -35,13 +39,29 @@ code {
   font-size: 20px;
 }
 
+.more-button {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background-color: #00bcd4;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+  .title {
+    font-size: 36px;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   hr {
     display: none;
   }
 
   .title {
-    font-size: 40px;
+    font-size: 24px;
   }
 
   .skills {
@@ -56,12 +76,24 @@ code {
   }
 }
 
-.more-button {
-  border: none;
-  border-radius: 10px;
-  padding: 10px 20px;
-  background-color: #00bcd4;
-  color: white;
-  font-size: 20px;
+/* Common styles */
+
+.pointer {
   cursor: pointer;
+}
+
+/* MISC */
+
+.inprogress {
+  color: gray;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 16px;
+  max-width: 300px;
+  text-align: start;
+}
+
+.inprogress > a {
+  color: grey;
 }
