@@ -6,10 +6,11 @@ function App() {
       <Navbar />
       <div className="App">
         <div>
-          <h1 className="title">
-            I help teams create beautiful, usable interfaces through thoughtful
-            research, nimble design thinking, and hands-on collaboration.
-          </h1>
+          <h1 className="title">Talk is cheap. Show me the code.</h1>
+          <p className="author">~ Linus Torwalds</p>
+
+          <br></br>
+
           {/* <hr className="divider" />
         <p className="about">
           a full stack developer with a passion... <strong> CRAP! </strong> I'll
